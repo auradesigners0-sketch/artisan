@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Decor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="menu-bar">
+        <a href="" class="logo">artisan<span>decor</span></a>
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul id="nav-menu">
+            <li class="active"><a href="#"><i class="fa fa-home"></i>home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i>about</a></li>
+            <li class="dropdown-container">
+                <a href="#" class="dropdown-toggle">
+                    <i class="fa fa-cart-plus"></i>collection
+                    <i class="fa fa-chevron-down dropdown-arrow"></i>
+                </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#collection"><i class="fa fa-box"></i>products</a></li>
+                        <li><a href="#"><i class="fa fa-image"></i>gallery</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-users"></i>clients</a></li>
+            <li><a href="#"><i class="fa fa-phone-square"></i>contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Content Section -->
+    <div class="hero-content">
+        <h1>Crafted Elegance for Every Space</h1>
+        <p>Handmade furniture inspired by simplicity, built to last.</p>
+        <button class="explore-btn">Explore Collection</button>
+    </div>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Discover pieces that bring strength and style to your space</h2>
+                    <p class="body-text">Our collection is a celebration of form and function—crafted to anchor your interiors with quiet confidence. Each piece is thoughtfully designed to offer more than utility; it offers presence. From sculptural seating to refined accents, we believe that beauty lives in the details.</p>
+                    <div class="button-group">
+                        <a href="#collection" class="btn btn-primary">Browse Pieces</a>
+                        <a href="#collection" class="btn btn-secondary">Explore Collection</a>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img src="images/featured.png" alt="Modern Chair" class="product-image">
+                </div>
+            </div>
+            
+            <!-- Statistics Section -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2000">0</div>
+                    <div class="stat-label">Furniture</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="700">0</div>
+                    <div class="stat-label">Sold</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="450">0</div>
+                    <div class="stat-label">Deliveries Made</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection-section">
+        <div class="container">
+            <div class="collection-header">
+                <span class="section-badge">🌿 Decor Showcase</span>
+                <h2>Elevate the Everyday</h2>
+                <p>Artful accents that transform your space.</p>
+            </div>
+            
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="vases">Vases</button>
+                    <button class="filter-btn" data-filter="lighting">Lighting</button>
+                    <button class="filter-btn" data-filter="textiles">Textiles</button>
+                    <button class="filter-btn" data-filter="furniture">Furniture</button>
+                </div>
+            </div>
+            
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card" data-category="vases">
+                    <div class="product-image-container">
+                        <img src="https://picsum.photos/seed/vase1/400/400.jpg" alt="Ceramic Vase" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn"><i class="fa fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Handcrafted Ceramic Vase</h3>
+                        <p class="product-description">A minimalist ceramic vase with organic shapes and earthy tones.</p>
+                        <div class="product-price">$85</div>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card" data-category="lighting">
+                    <div class="product-image-container">
+                        <img src="https://picsum.photos/seed/lamp1/400/400.jpg" alt="Table Lamp" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn"><i class="fa fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Brass Table Lamp</h3>
+                        <p class="product-description">Elegant brass lamp with adjustable arm and warm light diffusion.</p>
+                        <div class="product-price">$145</div>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card" data-category="textiles">
+                    <div class="product-image-container">
+                        <img src="https://picsum.photos/seed/pillow1/400/400.jpg" alt="Throw Pillow" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn"><i class="fa fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Linen Throw Pillows</h3>
+                        <p class="product-description">Set of two linen pillows with subtle geometric patterns.</p>
+                        <div class="product-price">$65</div>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card" data-category="furniture">
+                    <div class="product-image-container">
+                        <img src="https://picsum.photos/seed/stool1/400/400.jpg" alt="Wooden Stool" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn"><i class="fa fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Carved Wooden Stool</h3>
+                        <p class="product-description">Hand-carved oak stool with natural finish and sculptural form.</p>
+                        <div class="product-price">$220</div>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card" data-category="vases">
+                    <div class="product-image-container">
+                        <img src="https://picsum.photos/seed/vase2/400/400.jpg" alt="Glass Vase" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn"><i class="fa fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Art Glass Vase</h3>
+                        <p class="product-description">Hand-blown glass vase with unique color variations.</p>
+                        <div class="product-price">$95</div>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card" data-category="lighting">
+                    <div class="product-image-container">
+                        <img src="https://picsum.photos/seed/pendant1/400/400.jpg" alt="Pendant Light" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn"><i class="fa fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Woven Pendant Light</h3>
+                        <p class="product-description">Natural fiber pendant that creates beautiful light patterns.</p>
+                        <div class="product-price">$175</div>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card" data-category="textiles">
+                    <div class="product-image-container">
+                        <img src="https://picsum.photos/seed/blanket1/400/400.jpg" alt="Throw Blanket" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn"><i class="fa fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Merino Wool Throw</h3>
+                        <p class="product-description">Luxurious merino wool throw with soft texture and warm feel.</p>
+                        <div class="product-price">$125</div>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card" data-category="furniture">
+                    <div class="product-image-container">
+                        <img src="https://picsum.photos/seed/side-table1/400/400.jpg" alt="Side Table" class="product-image">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn"><i class="fa fa-eye"></i> Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Marble Side Table</h3>
+                        <p class="product-description">Elegant marble side table with brass accents and minimalist design.</p>
+                        <div class="product-price">$285</div>
+                        <button class="shop-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elevate Section -->
+    <section class="elevate-section">
+        <div class="container">
+            <div class="elevate-content">
+                <h2>Elevate the Everyday</h2>
+                <p class="elevate-text">Our decor pieces are designed to transform the ordinary into the extraordinary. From hand-thrown ceramics to sculptural lighting, each item is selected for its craftsmanship, material integrity, and timeless appeal. These are the quiet details that make a space feel complete.</p>
+                <div class="elevate-buttons">
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="elevate-image">
+                <img src="https://picsum.photos/seed/elevate/600/400.jpg" alt="Decor Showcase" class="elevate-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product">
+                <div class="modal-image">
+                    <img src="" alt="Product Image" id="modal-image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-name">Product Name</h2>
+                    <p id="modal-description">Product description goes here.</p>
+                    <div class="modal-price" id="modal-price">$0</div>
+                    <div class="modal-quantity">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
