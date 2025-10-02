@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Artisan Decor</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap">
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation Bar -->
+    <div class="menu-bar">
+        <a href="../index.html" class="logo">artisan<span>decor</span></a>
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul id="nav-menu" role="navigation">
+            <li><a href="../index.html"><i class="fa fa-home"></i>home</a></li>
+            <li class="active"><a href="#"><i class="fa fa-user"></i>about</a></li>
+            <li class="dropdown-container">
+                <a href="../index.html#collection" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button">
+                    <i class="fa fa-cart-plus"></i>collection
+                    <i class="fa fa-chevron-down dropdown-arrow"></i>
+                </a>
+                <div class="sub-menu-1" role="menu">
+                    <ul>
+                        <li><a href="../index.html#collection" role="menuitem"><i class="fa fa-box"></i>products</a></li>
+                        <li><a href="#" role="menuitem"><i class="fa fa-image"></i>gallery</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-users"></i>clients</a></li>
+            <li><a href="#"><i class="fa fa-phone-square"></i>contact</a></li>
+        </ul>
+        
+        <!-- Search Container -->
+        <div class="search-container" id="search-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Search products..." aria-label="Search products">
+            <button class="search-btn" id="search-btn" aria-label="Search"><i class="fa fa-search"></i></button>
+        </div>
+        
+        <!-- Cart Icon -->
+        <div class="cart-icon" id="cart-icon" aria-label="Shopping cart">
+            <a href="../cart/cart.html" style="text-decoration: none; color: inherit;">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="main-content">
+        <div class="hero-content">
+            <h1>Our Story</h1>
+            <p>Crafting timeless pieces with soul and purpose</p>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Rooted in Craft. Inspired by Space.</h2>
+                    <p class="about-text">Artisan Decor began with a simple belief: that every home deserves pieces with soul. We design for those who value quiet beauty, enduring materials, and the subtle power of intentional living.</p>
+                    <p class="about-text">Our studio blends tradition with modernity—drawing from heritage techniques, natural textures, and a deep respect for form. Each item is a reflection of our commitment to thoughtful design and timeless character.</p>
+                    <div class="values-container">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                            <h3>Sustainability</h3>
+                            <p>We source materials responsibly and craft with minimal environmental impact.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fa fa-handshake-o"></i>
+                            </div>
+                            <h3>Craftsmanship</h3>
+                            <p>Each piece is handcrafted by skilled artisans who pour their heart into their work.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <h3>Passion</h3>
+                            <p>We are driven by a love for design and a desire to create meaningful spaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img src="../images/aboutpage.png" alt="Artisan Studio" class="studio-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Journey</h2>
+                <p>From a small workshop to a global brand</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2010</h3>
+                        <h4>The Beginning</h4>
+                        <p>Artisan Decor started as a small workshop in a quiet neighborhood, with just two artisans and a shared vision.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2013</h3>
+                        <h4>First Collection</h4>
+                        <p>Launched our debut collection at a local design fair, receiving recognition for our unique approach to sustainable design.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2016</h3>
+                        <h4>Expansion</h4>
+                        <p>Opened our flagship showroom and expanded our team of artisans to meet growing demand.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2019</h3>
+                        <h4>International Recognition</h4>
+                        <p>Received the International Design Award for our commitment to craftsmanship and sustainability.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2023</h3>
+                        <h4>Global Community</h4>
+                        <p>Today, we're proud to serve a global community of design enthusiasts who share our values and appreciation for craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Team</h2>
+                <p>The talented individuals behind Artisan Decor</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/team1.png" alt="Founder & Creative Director">
+                    </div>
+                    <div class="member-info">
+                        <h3>Emma Rodriguez</h3>
+                        <p class="member-role">Founder & Creative Director</p>
+                        <p class="member-bio">With over 15 years of experience in sustainable design, Emma founded Artisan Decor with a vision to create meaningful pieces that tell stories.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/team2.png" alt="Master Artisan">
+                    </div>
+                    <div class="member-info">
+                        <h3>James Chen</h3>
+                        <p class="member-role">Master Artisan</p>
+                        <p class="member-bio">James brings traditional woodworking techniques to contemporary designs, creating pieces that honor heritage while embracing modern aesthetics.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/team3.png" alt="Design Lead">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sofia Patel</h3>
+                        <p class="member-role">Design Lead</p>
+                        <p class="member-bio">Sofia's background in textile design brings a unique perspective to our collections, with a focus on texture, color, and sustainable materials.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="../images/team4.png" alt="Operations Manager">
+                    </div>
+                    <div class="member-info">
+                        <h3>Michael Thompson</h3>
+                        <p class="member-role">Operations Manager</p>
+                        <p class="member-bio">Michael ensures that every piece meets our quality standards and reaches our customers safely, managing our global supply chain with care.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Process</h2>
+                <p>From concept to creation</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Inspiration</h3>
+                    <p>Every design begins with inspiration drawn from nature, architecture, and cultural heritage.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Design</h3>
+                    <p>Our design team creates detailed sketches and digital models, refining every detail.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Material Selection</h3>
+                    <p>We carefully select sustainable materials that align with our design vision and values.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Crafting</h3>
+                    <p>Skilled artisans bring each design to life using traditional techniques and modern tools.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Quality Check</h3>
+                    <p>Each piece undergoes rigorous quality checks to ensure it meets our standards.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3>Delivery</h3>
+                    <p>We carefully package and deliver each piece to its new home, ready to be cherished for years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Visit Our Studio</h2>
+                <p>Experience our craftsmanship firsthand and explore our latest collection in person.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Book a Visit</a>
+                    <a href="../index.html#collection" class="btn btn-secondary">Browse Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Craftsmanship</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Browse</h3>
+                    <ul>
+                        <li><a href="../index.html#collection">Furniture</a></li>
+                        <li><a href="../index.html#collection">Decor</a></li>
+                        <li><a href="../index.html#collection">Lighting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Artisan Decor. Designed and developed by Brandstorm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="about.js"></script>
+</body>
+</html>
