@@ -130,6 +130,7 @@ img {
     height: 3px;
     background-color: #333;
     margin: 3px 0;
+    margin-left: 125px;
     transition: 0.3s;
 }
 
@@ -233,12 +234,13 @@ img {
 }
 
 .hero-description {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 40px;
     line-height: 1.6;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: none;
 }
 
 .hero-cta {
@@ -259,8 +261,8 @@ img {
 }
 
 .cta-button:hover {
-    color: #000000;
-    background-color: #112a58;
+    color: #FFFFFF;
+    background-color: #8a6d3b;
 }
 
 .cta-bg {
@@ -763,7 +765,7 @@ img {
 }
 
 .join-btn.primary {
-    background-color: #112a58;
+    background-color: #8a6d3b;
     color: white;
 }
 

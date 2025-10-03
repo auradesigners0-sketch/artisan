@@ -113,6 +113,11 @@ body {
 }
 
 /* Menu Items */
+.menu-bar ul {
+    display: flex;
+    flex-direction: column;
+}
+
 .menu-bar ul li {
     position: relative;
     margin: 0 5px;

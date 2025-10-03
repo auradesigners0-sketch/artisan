@@ -96,6 +96,7 @@ body {
     margin: 2px 0;
     transition: all 0.3s ease;
     border-radius: 2px;
+    margin-left: 125px;
     transform-origin: center;
 }
 
