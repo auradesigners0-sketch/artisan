@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Artisan Decor</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <!-- Skip link for accessibility -->
@@ -25,22 +26,10 @@
         </div>
         
         <ul id="nav-menu" role="navigation">
-            <li><a href="index.html"><i class="fa fa-home"></i>home</a></li>
+            <li><a href="../index.html"><i class="fa fa-home"></i>home</a></li>
             <li class="active"><a href="about.html" aria-current="page"><i class="fa fa-user"></i>about</a></li>
-            <li class="dropdown-container">
-                <a href="index.html#collection" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-cart-plus"></i>collection
-                    <i class="fa fa-chevron-down dropdown-arrow"></i>
-                </a>
-                <div class="sub-menu-1" role="menu">
-                    <ul>
-                        <li><a href="index.html#collection" role="menuitem"><i class="fa fa-box"></i>products</a></li>
-                        <li><a href="#" role="menuitem"><i class="fa fa-image"></i>gallery</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="index.html#testimonials"><i class="fa fa-users"></i>clients</a></li>
-            <li><a href="index.html#contact"><i class="fa fa-phone-square"></i>contact</a></li>
+            <li><a href="../index.html#testimonials"><i class="fa fa-users"></i>clients</a></li>
+            <li><a href="../contact/contact.html"><i class="fa fa-phone-square"></i>contact</a></li>
         </ul>
         
         <!-- Cart Icon -->
@@ -54,152 +43,312 @@
     <div class="menu-overlay" id="menu-overlay"></div>
 
     <!-- Hero Content Section -->
-    <div class="hero-content">
-        <h1>Rooted in Craft. Inspired by Space.</h1>
-        <p>Creating interiors that feel like poetry—spaces where every object carries intention, beauty, and soul.</p>
+    <div class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-gradient"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-glitch" data-text="Rooted in Craft.">Rooted in Craft.</div>
+            <div class="hero-subtitle">Inspired by Space.</div>
+            <div class="hero-description">
+                Creating interiors that feel like poetry—spaces where every object carries intention, beauty, and soul.
+            </div>
+            <div class="hero-cta">
+                <a href="#main-content" class="cta-button">
+                    <span>Discover Our Story</span>
+                    <div class="cta-bg"></div>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>scroll</span>
+        </div>
     </div>
 
     <!-- Main Content -->
     <main id="main-content" class="about-main">
         <div class="container">
             <!-- Vision Section -->
-            <section class="about-section vision-section">
-                <div class="section-icon">
-                    <i class="fa fa-eye"></i>
+            <section class="about-section vision-section" data-aos="fade-up">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fa fa-eye"></i>
+                    </div>
+                    <h2 class="section-title">Vision</h2>
                 </div>
-                <h2 class="section-title">Vision</h2>
-                <p class="section-text">
-                    To create interiors that feel like poetry—spaces where every object carries intention, beauty, and soul. We envision a world where homes are sanctuaries, filled with pieces that speak softly but leave a lasting impression. Our designs are not just furnishings—they're invitations to live more thoughtfully.
-                </p>
+                <div class="section-content">
+                    <p class="section-text">
+                        To create interiors that feel like poetry—spaces where every object carries intention, beauty, and soul. We envision a world where homes are sanctuaries, filled with pieces that speak softly but leave a lasting impression.
+                    </p>
+                    <div class="vision-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Sanctuary Spaces</h4>
+                                <p>Homes as peaceful retreats</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Emotional Design</h4>
+                                <p>Objects that resonate deeply</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Thoughtful Living</h4>
+                                <p>Invitations to live mindfully</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Mission Section -->
-            <section class="about-section mission-section">
-                <div class="section-icon">
-                    <i class="fa fa-bullseye"></i>
+            <section class="about-section mission-section" data-aos="fade-up" data-aos-delay="100">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fa fa-bullseye"></i>
+                    </div>
+                    <h2 class="section-title">Mission</h2>
                 </div>
-                <h2 class="section-title">Mission</h2>
-                <p class="section-text">
-                    To craft timeless, artisan-made decor that elevates everyday living. We partner with skilled makers, honor natural materials, and design with emotional resonance—so that every piece tells a story and every space feels personal.
-                </p>
+                <div class="section-content">
+                    <p class="section-text">
+                        To craft timeless, artisan-made decor that elevates everyday living. We partner with skilled makers, honor natural materials, and design with emotional resonance—so that every piece tells a story and every space feels personal.
+                    </p>
+                    <div class="mission-showcase">
+                        <div class="showcase-item">
+                            <div class="showcase-number">15+</div>
+                            <div class="showcase-label">Years Excellence</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-number">500+</div>
+                            <div class="showcase-label">Happy Clients</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-number">1000+</div>
+                            <div class="showcase-label">Pieces Created</div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Beliefs Section -->
-            <section class="about-section beliefs-section">
-                <div class="section-icon">
-                    <i class="fa fa-heart"></i>
+            <section class="about-section beliefs-section" data-aos="fade-up" data-aos-delay="200">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <h2 class="section-title">What We Believe</h2>
                 </div>
-                <h2 class="section-title">What We Believe</h2>
-                <div class="beliefs-grid">
-                    <div class="belief-card">
-                        <div class="belief-icon">
-                            <i class="fa fa-paint-brush"></i>
+                <div class="beliefs-container">
+                    <div class="belief-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="belief-number">01</div>
+                        <div class="belief-content">
+                            <div class="belief-icon">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <h3>Design is emotional</h3>
+                            <p>A well-placed object can shift the mood of a room, evoke memory, and inspire calm.</p>
                         </div>
-                        <h3>Design is emotional</h3>
-                        <p>A well-placed object can shift the mood of a room, evoke memory, and inspire calm.</p>
                     </div>
-                    <div class="belief-card">
-                        <div class="belief-icon">
-                            <i class="fa fa-hammer"></i>
+                    <div class="belief-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="belief-number">02</div>
+                        <div class="belief-content">
+                            <div class="belief-icon">
+                                <i class="fa fa-hammer"></i>
+                            </div>
+                            <h3>Craft matters</h3>
+                            <p>We work with artisans who shape each piece with care, using heritage techniques and honest materials.</p>
                         </div>
-                        <h3>Craft matters</h3>
-                        <p>We work with artisans who shape each piece with care, using heritage techniques and honest materials.</p>
                     </div>
-                    <div class="belief-card">
-                        <div class="belief-icon">
-                            <i class="fa fa-leaf"></i>
+                    <div class="belief-card" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="belief-number">03</div>
+                        <div class="belief-content">
+                            <div class="belief-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                            <h3>Simplicity is powerful</h3>
+                            <p>We favor clean lines, natural textures, and quiet details that speak volumes.</p>
                         </div>
-                        <h3>Simplicity is powerful</h3>
-                        <p>We favor clean lines, natural textures, and quiet details that speak volumes.</p>
                     </div>
-                    <div class="belief-card">
-                        <div class="belief-icon">
-                            <i class="fa fa-home"></i>
+                    <div class="belief-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="belief-number">04</div>
+                        <div class="belief-content">
+                            <div class="belief-icon">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <h3>Spaces reflect souls</h3>
+                            <p>Your home is your canvas. We offer pieces that help you express your story with grace.</p>
                         </div>
-                        <h3>Spaces should reflect the soul</h3>
-                        <p>Your home is your canvas. We offer pieces that help you express your story with grace and intention.</p>
                     </div>
                 </div>
             </section>
 
             <!-- Story Section -->
-            <section class="about-section story-section">
-                <div class="story-content">
-                    <div class="story-text">
-                        <div class="section-icon">
-                            <i class="fa fa-book"></i>
+            <section class="about-section story-section" data-aos="fade-up" data-aos-delay="300">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <h2 class="section-title">Our Story</h2>
+                </div>
+                <div class="story-container">
+                    <div class="story-timeline">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-year">2010</div>
+                            <div class="timeline-content">
+                                <h4>The Beginning</h4>
+                                <p>Sudama's vision for soulful spaces takes root with a passion for elegant interiors.</p>
+                            </div>
                         </div>
-                        <h2 class="section-title">Our Story</h2>
-                        <p class="section-text">
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-year">2015</div>
+                            <div class="timeline-content">
+                                <h4>First Collection</h4>
+                                <p>Launched to critical acclaim, establishing our signature aesthetic.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-content">
+                                <h4>Global Expansion</h4>
+                                <p>Reached international markets, bringing artisan decor to homes worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content-text">
+                        <p>
                             Artisan Decor was founded by Sudama, a creative entrepreneur with a passion for elegant interiors and meaningful design. With a background in visual branding and a deep appreciation for craftsmanship, Sudama built the brand to celebrate the intersection of beauty and authenticity.
                         </p>
-                        <p class="section-text">
+                        <p>
                             What began as a personal pursuit of soulful spaces has grown into a collaborative studio—where designers, makers, and storytellers come together to create objects that feel alive.
                         </p>
                     </div>
-                    <div class="story-image">
-                        <img src="images/craft.png" alt="Artisan Studio" class="story-img">
+                    <div class="story-image" data-aos="zoom-in">
+                        <div class="image-wrapper">
+                            <img src="../images/aboutpage.png" alt="Artisan Studio">
+                            <div class="image-overlay"></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Values Section -->
-            <section class="about-section values-section">
-                <div class="section-icon">
-                    <i class="fa fa-gem"></i>
+            <section class="about-section values-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fa fa-gem"></i>
+                    </div>
+                    <h2 class="section-title">Our Core Values</h2>
                 </div>
-                <h2 class="section-title">Our Core Values</h2>
-                <div class="values-table">
-                    <div class="value-row">
-                        <div class="value-name">
+                <div class="values-grid">
+                    <div class="value-card" data-aos="flip-left" data-aos-delay="500">
+                        <div class="value-icon">
                             <i class="fa fa-target"></i>
-                            <span>Intentionality</span>
                         </div>
-                        <div class="value-description">
-                            Every design choice is made with purpose—from materials to form to placement.
-                        </div>
+                        <h3>Intentionality</h3>
+                        <p>Every design choice is made with purpose—from materials to form to placement.</p>
                     </div>
-                    <div class="value-row">
-                        <div class="value-name">
+                    <div class="value-card" data-aos="flip-left" data-aos-delay="600">
+                        <div class="value-icon">
                             <i class="fa fa-recycle"></i>
-                            <span>Sustainability</span>
                         </div>
-                        <div class="value-description">
-                            We source responsibly, produce in small batches, and favor longevity over excess.
-                        </div>
+                        <h3>Sustainability</h3>
+                        <p>We source responsibly, produce in small batches, and favor longevity over excess.</p>
                     </div>
-                    <div class="value-row">
-                        <div class="value-name">
+                    <div class="value-card" data-aos="flip-left" data-aos-delay="700">
+                        <div class="value-icon">
                             <i class="fa fa-tools"></i>
-                            <span>Craftsmanship</span>
                         </div>
-                        <div class="value-description">
-                            We honor the hands that make—celebrating skill, tradition, and artistry.
-                        </div>
+                        <h3>Craftsmanship</h3>
+                        <p>We honor the hands that make—celebrating skill, tradition, and artistry.</p>
                     </div>
-                    <div class="value-row">
-                        <div class="value-name">
+                    <div class="value-card" data-aos="flip-left" data-aos-delay="800">
+                        <div class="value-icon">
                             <i class="fa fa-heart"></i>
-                            <span>Emotional Design</span>
                         </div>
-                        <div class="value-description">
-                            Our pieces are designed to resonate, not just decorate.
+                        <h3>Emotional Design</h3>
+                        <p>Our pieces are designed to resonate, not just decorate.</p>
+                    </div>
+                    <div class="value-card" data-aos="flip-left" data-aos-delay="900">
+                        <div class="value-icon">
+                            <i class="fa fa-clock"></i>
+                        </div>
+                        <h3>Timelessness</h3>
+                        <p>We don't chase trends. We create heirlooms.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="about-section team-section" data-aos="fade-up" data-aos-delay="500">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h2 class="section-title">Meet Our Team</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="600">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="../images/team1.png" alt="Sudama">
+                                <div class="member-info">
+                                    <h4>Sudama</h4>
+                                    <p>Founder & Creative Director</p>
+                                    <div class="member-social">
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="value-row">
-                        <div class="value-name">
-                            <i class="fa fa-clock"></i>
-                            <span>Timelessness</span>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="700">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="../images/team2.png" alt="Alex Chen">
+                                <div class="member-info">
+                                    <h4>Alex Chen</h4>
+                                    <p>Lead Designer</p>
+                                    <div class="member-social">
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="value-description">
-                            We don't chase trends. We create heirlooms.
+                    </div>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="800">
+                        <div class="member-card">
+                            <div class="member-image">
+                                <img src="../images/team3.png" alt="Maria Rodriguez">
+                                <div class="member-info">
+                                    <h4>Maria Rodriguez</h4>
+                                    <p>Master Artisan</p>
+                                    <div class="member-social">
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Join Section -->
-            <section class="about-section join-section">
+            <section class="about-section join-section" data-aos="fade-up" data-aos-delay="600">
                 <div class="join-content">
                     <div class="section-icon">
                         <i class="fa fa-envelope-open"></i>
@@ -208,9 +357,16 @@
                     <p class="section-text">
                         We invite you to explore our collections, read our journal, and discover the quiet power of objects. Whether you're styling a corner or curating a home, Artisan Decor is here to help you live beautifully.
                     </p>
-                    <a href="index.html#collection" class="btn btn-primary browse-collection-btn">
-                        Browse the Collection
-                    </a>
+                    <div class="join-buttons">
+                        <a href="index.html#collection" class="join-btn primary">
+                            <span>Browse Collection</span>
+                            <div class="btn-bg"></div>
+                        </a>
+                        <a href="index.html#contact" class="join-btn secondary">
+                            <span>Get in Touch</span>
+                            <div class="btn-bg"></div>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -223,7 +379,7 @@
                 <div class="footer-column">
                     <h3>About</h3>
                     <ul>
-                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="../about/about.html">Our Story</a></li>
                         <li><a href="#">Craftsmanship</a></li>
                         <li><a href="#">Sustainability</a></li>
                     </ul>
@@ -231,9 +387,9 @@
                 <div class="footer-column">
                     <h3>Browse</h3>
                     <ul>
-                        <li><a href="index.html#collection">Furniture</a></li>
-                        <li><a href="index.html#collection">Decor</a></li>
-                        <li><a href="index.html#collection">Lighting</a></li>
+                        <li><a href="../coll/coll.html">Furniture</a></li>
+                        <li><a href="../coll/coll.html">Decor</a></li>
+                        <li><a href="../coll/coll.html">Lighting</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -260,6 +416,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="about.js"></script>
 </body>
 </html>
